@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="cabeca">
+      
+
+            <h1>Padaria Seu Desejo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#serviços-nome">Serviços</a></li>
+                    <li><a href="#produtos-nome">Produtos</a></li>
+                    <li><a href="#formulario">Formulario</a></li>
+                    <li onclick="changeTema()">Mudar Tema</li>
+                </ul>
+            </nav>
+       
+    </header>
+
+    <main id="corpo">
+      
+            <h1 id="serviços-nome">Serviços</h1>
+            <section class="serviços">
+                <div class="serviço">
+                    <img src="serviço_img/cento.png">
+                    <h3>Cento de salgado</h3>
+                    <p>R$49.99</p>
+                    <button onclick="alertCarrinho()">Carrinho</button>
+                </div>
+                <div class="serviço">
+                    <img id="docinho" src="serviço_img/docinhos.png">
+                    <h3>Docinhos de festa</h3>
+                    <p>R$69.99</p>
+                    <button onclick="alertCarrinho()">Carrinho</button>
+                </div>
+                <div class="serviço">
+                    <img src="serviço_img/kitfesta.png">
+                    <h3>Kit festa</h3>
+                    <p>R$149.99</p>
+                    <button onclick="alertCarrinho()">Carrinho</button>
+                </div>
+                <div class="serviço">
+                    <img src="serviço_img/pizza.png">
+                    <h3>Pizza</h3>
+                    <p>R$39.99</p>
+                    <button onclick="alertCarrinho()">Carrinho</button>
+                </div>
+                <div class="serviço">
+                    <img src="serviço_img/tortasalgada.png">
+                    <h3>Torta salgada</h3>
+                    <p>R$79.99</p>
+                    <button onclick="alertCarrinho()">Carrinho</button>
+                </div>
+            </section>
+
+
+            <h1 id="produtos-nome">Produtos</h1>
+            <section class="produtos">
+
+                <div class="produto">
+                    <img src="produto_img/bolocaseiro.png">
+                    <h3>Bolo caseiro</h3>
+                    <p>R$29.99</p>
+                    <button onclick="alertCarrinho()">Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="produto_img/pao_frances_na_cesta.png">
+                    <h3>Pão francês/un</h3>
+                    <p>R$0.85</p>
+                    <button onclick="alertCarrinho()">Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="produto_img/paodequeijo.png">
+                    <h3>Pão de queijo/un</h3>
+                    <p>R$0.99</p>
+                    <button onclick="alertCarrinho()">Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="produto_img/rosquinhas.png">
+                    <h3>Rosquinhas</h3>
+                    <p>R$3.99</p>
+                    <button onclick="alertCarrinho()">Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="produto_img/salgadinho.png">
+                    <h3>Salgadinhos fritos/kg</h3>
+                    <p>R$9.99</p>
+                    <button onclick="alertCarrinho()">Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="produto_img/tortadoce.png">
+                    <h3>Torta doce/pedaço</h3>
+                    <p>R$19.99</p>
+                    <button onclick="alertCarrinho()">Carrinho</button>
+                </div>
+            </section>
+            <section id="formulario">
+                <h2 class="form-nome">Formulário de contato</h2>
+                <div class="form-cont">
+                    <form class="formulario_">
+
+                        <input type="text" id="Nome" placeholder="Seu nome">
+                        <input type="email" id="Email" placeholder="Seu email">
+                        <input type="text" id="Assunto" placeholder="Assunto">
+                        <textarea id="mensagem" cols="106" rows="10" placeholder="Mensagem"></textarea>
+                        <div class="button-form">
+                            <button onclick="alertForm()" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <p>&copy; Todos direitos reservados</p>
+    </footer>
+</body>
+
+</html>
